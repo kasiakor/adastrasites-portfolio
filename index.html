@@ -243,23 +243,22 @@
 				</div>
 				<div class="footer-contact-form">
 					<h5>Contact Form</h5>               
-                    <form class="contact-form" method="post" action="http://www.adastrasites.com/cgi-bin/FormMail.pl" 
-                    accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; 
-                    document.charset = 'ISO-8859-1'; 
-                    window.onbeforeunload = function () {document.charset=originalCharset;};">
+                    <form name="contactForm" method="post" action="http://www.adastrasites.com/cgi-bin/FormMail.pl" 
+                    accept-charset="ISO-8859-1">
                         <div class="contact-form__input">
-                         <input type="text" name="name" placeholder="Name">
-                        <input type="email" name="email" placeholder="Email">
+                         <input type="text" name="name" placeholder="Name" required minlength="2" maxlength="20">
+                        <input type="email" name="email" placeholder="Email" required>
                         </div>
-                        <textarea type="text" name="message" placeholder="Message"></textarea>
+                        <textarea type="text" name="message" placeholder="Message" required minlength="5" maxlength="140"></textarea>
                         <input type="submit" name="submit" class="submit-button">
 
                             <input type="hidden" name="recipient" value="contact@adastrasites.com" />
                             <input type="hidden" name="email" />
                             <input type="hidden" name="message" />
-    <!--
+   
                             <input type="hidden" name="redirect" 
-                            value="http://www.kasiakor.co.uk/portfolio/thankyou.html" />
+                            value="http://www.adastrasites.com/thankyou.html" />
+                         <!--
                             <input type="hidden" name="missing_fields_redirect" 
                             value="http://www.kasiakor.co.uk/portfolio/error.html" />
     -->
