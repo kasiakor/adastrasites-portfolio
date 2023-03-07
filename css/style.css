@@ -413,7 +413,7 @@
   text-align: center; }
   .single-book .single-book__img {
     position: relative;
-    display: block;
+    display: block;   
     font-size: 0; }
     .single-book .single-book__img .single-book_download {
       opacity: 0;
@@ -534,7 +534,7 @@
   justify-content: space-between; }
 
 .blog-slider .slick-slide {
-  margin: 0 15px; }
+  margin: 0 20px; }
 
 .blog-slider .slick-list {
   margin: 0 -15px; }
@@ -547,7 +547,6 @@
   .single-blog .single-blog__text {
     width: 50%;
     padding: 7%;
-    border: 3px solid #f5f5f5;
     border-left: 0; }
     .single-blog .single-blog__text h4 {
       margin-bottom: 5px;
